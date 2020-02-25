@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.settings.SettingsViewModel"/>
+    </data>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/generalTextView"
+                            style="@style/settings_parent_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/settings_komomunikasjon"
+                            android:textColor="@color/gray_text_color"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:id="@+id/notificationsLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/settings_item_top_padding"
+                        android:paddingBottom="@dimen/settings_item_bottom_padding">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                app:iiv_color="@color/icon_gray_color"
+                                app:iiv_icon="@string/gmd_notifications"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5">
+
+                        <TextView
+                                android:id="@+id/notificationTextView"
+                                style="@style/settings_parent_text_style"
+                                android:text="@string/notifikasjoner"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|end">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/notificationsSwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/switch_bg"
+                                android:enabled="false"
+                                android:clickable="false"
+                                app:theme="@style/Color1SwitchStyle"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:id="@+id/reportFailLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/settings_item_top_padding"
+                        android:paddingBottom="@dimen/settings_item_bottom_padding">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                app:iiv_color="@color/icon_gray_color"
+                                app:iiv_icon="@string/gmd_notifications"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5">
+
+                        <TextView
+                                android:id="@+id/reportFailTextView"
+                                style="@style/settings_parent_text_style"
+                                android:text="@string/rapportere_feil"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|end">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/refortFailSwitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:button="@drawable/switch_bg"
+                                app:theme="@style/Color1SwitchStyle"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/moreInfoTextView"
+                            style="@style/settings_parent_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/kontoinstillinger"
+                            android:textColor="@color/gray_text_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/logoutLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_item_bg"
+                        android:paddingStart="@dimen/settings_item_left_padding"
+                        android:paddingLeft="@dimen/settings_item_left_padding"
+                        android:paddingTop="@dimen/settings_item_top_padding"
+                        android:paddingBottom="@dimen/settings_item_bottom_padding">
+
+                    <TextView
+                            android:id="@+id/aboutUsTextView"
+                            style="@style/settings_parent_text_style"
+                            android:text="@string/logg_ut"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            style="@style/settings_parent_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/applikasjon"
+                            android:textColor="@color/gray_text_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/settings_item_top_padding"
+                        android:paddingBottom="@dimen/settings_item_bottom_padding">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/smart_stempel_logo"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_marginStart="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6">
+
+                        <TextView
+                                style="@style/settings_parent_text_style"
+                                android:text="@string/smart_setmepel_version"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/settings_item_top_padding"
+                        android:paddingBottom="@dimen/settings_item_bottom_padding">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/smart_digital_full_logo"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_marginStart="10dp"
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6">
+
+                        <TextView
+                                style="@style/settings_parent_text_style"
+                                android:text="@string/utviklet_av_smart_digital_as"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</layout>

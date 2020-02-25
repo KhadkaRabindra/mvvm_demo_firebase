@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.home.adapter.HomeAdapterViewModel"/>
+    </data>
+    <FrameLayout
+            android:layout_width="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="70dp"
+            android:id="@+id/navigationLinearLayout"
+            android:gravity="center">
+
+        <ImageView android:layout_width="65dp"
+                   android:layout_height="65dp"
+                   android:scaleType="fitXY"
+                   android:adjustViewBounds="true"
+                   android:background="@drawable/bg_item"/>
+
+        <ImageView android:layout_width="54dp"
+                   android:adjustViewBounds="true"
+                   android:layout_gravity="center"
+                   android:scaleType="fitXY"
+                   android:layout_marginBottom="4.5dp"
+                   android:layout_marginEnd="6dp"
+                   app:setImgResourceWithFlag="@{viewModel.homeData}"
+                   android:layout_height="54dp"/>
+
+        <ImageView android:layout_width="24dp"
+                   android:adjustViewBounds="true"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="4.5dp"
+                   android:layout_marginEnd="6dp"
+                   android:src="@drawable/ic_star"
+                   android:visibility="invisible"
+                   android:scaleType="fitXY"
+                   app:setImgResourceWithFlagForStar="@{viewModel.homeData}"
+                   android:layout_height="24dp"/>
+
+
+    </FrameLayout>
+
+</layout>

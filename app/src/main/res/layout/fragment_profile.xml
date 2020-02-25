@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.profile.ProfileFragmentViewModel"/>
+    </data>
+
+    <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_place_holder"
+                        app:riv_border_color="@color/black"
+                        app:riv_border_width="2dip"
+                        app:riv_oval="true"/>
+
+                <TextView
+                        android:id="@+id/userTextView"
+                        style="@style/WidthWrapHeightWrap"
+                        android:layout_marginTop="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:text="@{viewModel.userFullName}"
+                        android:textColor="@color/colorProfile"
+                        android:textSize="24sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/usernameTextView"
+                            style="@style/WidthWrapHeightWrap"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="16sp"
+                            android:text="@string/registrete_stempler"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorProfile"/>
+
+                    <TextView
+                            style="@style/WidthWrapHeightWrap"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:text="@{viewModel.registeredStamps}"
+                            android:textColor="@color/colorProfile"
+                            android:textSize="30sp"/>
+
+                    <TextView
+                            style="@style/WidthWrapHeightWrap"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="16sp"
+                            android:text="@string/stempler_igjen_til_neste"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorProfile"/>
+
+                    <TextView
+                            style="@style/WidthWrapHeightWrap"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:text="@{viewModel.remainingStamps}"
+                            android:textColor="@color/colorProfile"
+                            android:textSize="26sp"/>
+
+                    <LinearLayout
+                            android:layout_marginTop="60dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginEnd="60dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="start"
+                                    android:layout_marginBottom="2dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/colorProfile"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lojalitetsstatus"/>
+
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                <ImageView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_marginEnd="5dp"
+                                           android:layout_gravity="bottom"
+                                           app:setImgResource="@{viewModel.currentLoyalityRankImage}"/>
+
+                                <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:layout_marginBottom="2dp"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/colorProfile"
+                                        android:layout_height="wrap_content"
+                                        android:text="@{viewModel.currentLoyalityRanks}"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/colorProfile"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginEnd="60dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="start"
+                                    android:textSize="16sp"
+                                    android:layout_marginBottom="2dp"
+                                    android:textColor="@color/colorProfile"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/neste_rengering"/>
+
+                            <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                <ImageView android:layout_width="wrap_content"
+                                           android:layout_marginEnd="5dp"
+                                           android:layout_gravity="bottom"
+                                           android:layout_height="wrap_content"
+                                           app:setImgResource="@{viewModel.nextLoyalityRankImage}"/>
+
+                                <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="@{viewModel.nextLoyalityRanks}"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/colorProfile"
+                                        android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/colorProfile"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

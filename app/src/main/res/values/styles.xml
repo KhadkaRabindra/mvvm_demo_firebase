@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--passcode view style-->
+    <style name="PasscodeViewTheme" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarAppTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WidthMatchHeightWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthMatchHeightMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WidthWrapHeightWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthMatchHeightWrapVertical" parent="WidthMatchHeightWrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WidthWrapHeightWrapVertical" parent="WidthWrapHeightWrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WidthMatchHeightMatchVertical" parent="WidthMatchHeightMatch">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WidthMatchHeightWrapHorizontal" parent="WidthMatchHeightWrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WidthWrapHeightWrapHorizontal" parent="WidthWrapHeightWrap">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="WidthMatchHeightMatchHorizontal" parent="WidthMatchHeightMatch">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="DefaultRoundPaddingStyle" parent="WidthMatchHeightWrapVertical">
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="DefaultToolbarStyle" parent="WidthMatchHeightWrap">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ToolbarStyle</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">@string/please_wait</item>
+        <item name="DialogSpotCount">5</item>
+        <item name="DialogSpotColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="DefaultInputFieldWrapperStyle" parent="WidthMatchHeightWrap">
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_height">@dimen/input_field_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyToolBarStyle" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="settings_parent_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="settings_child_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/gray_text_color</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>

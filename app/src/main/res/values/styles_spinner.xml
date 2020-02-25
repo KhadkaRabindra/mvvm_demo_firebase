@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="DefaultSpinnerStyle" parent="WidthMatchHeightWrap">
+        <item name="ms_alignLabels">false</item>
+        <item name="ms_arrowColor">@color/colorPrimary</item>
+        <item name="ms_arrowSize">14dp</item>
+        <item name="ms_baseColor">@color/dark_blue</item>
+        <item name="ms_dropDownHintView">@layout/layout_default_dropdown_hint</item>
+        <item name="ms_enableErrorLabel">true</item>
+        <item name="ms_enableFloatingLabel">true</item>
+        <item name="ms_floatingLabelColor">@color/dark_blue</item>
+        <item name="ms_highlightColor">@color/black</item>
+        <item name="ms_hintColor">@color/dark_blue</item>
+        <item name="ms_hintView">@layout/layout_default_dropdown_hint</item>
+        <item name="ms_multiline">true</item>
+        <item name="ms_thickness">0dp</item>
+        <item name="ms_hintTextSize">@dimen/default_inputfield_textsize</item>
+        <item name="ms_errorColor">@color/colorAccent</item>
+
+    </style>
+
+    <style name="BorderedSpinnerStyle" parent="DefaultSpinnerStyle">
+        <item name="ms_thickness">0.0dp</item>
+        <item name="ms_enableFloatingLabel">false</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">13dp</item>
+    </style>
+</resources>

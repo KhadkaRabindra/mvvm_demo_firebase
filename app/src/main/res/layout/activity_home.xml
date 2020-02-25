@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.home.HomeActivityViewModel"/>
+    </data>
+    <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            style="@style/WidthMatchHeightMatch">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/main_content"
+                style="@style/WidthMatchHeightMatch"
+                tools:context=".view.home.HomeActivity">
+
+            <LinearLayout
+                    android:background="@color/colorPrimary"
+                    style="@style/WidthMatchHeightMatchVertical">
+
+                <include
+                        android:id="@+id/customToolbar"
+                        layout="@layout/toolbar_home"/>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="0.1dp"
+                      android:background="@color/white_transparent"/>
+
+                <FrameLayout
+                        android:id="@+id/container"
+                        style="@style/WidthMatchHeightMatch"
+                        android:background="@color/default_white_background"/>
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <FrameLayout
+                android:id="@+id/fragment_drawer"
+                android:layout_width="@dimen/navigation_drawer_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/colorPrimary"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

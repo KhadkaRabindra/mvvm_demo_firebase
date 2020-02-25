@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.nav.NavigationDrawerFragmentViewModel"/>
+    </data>
+    <androidx.core.widget.NestedScrollView
+            style="@style/WidthMatchHeightMatch"
+            android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@color/colorPrimary"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/llProfile"
+                    android:layout_width="match_parent"
+                    style="@style/WidthWrapHeightWrapVertical"
+                    android:layout_gravity="center">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/border_white_bg"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="15dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_profile_nav"
+                        app:riv_corner_radius="20dp"/>
+
+                <com.maxx.nordvaest.utils.view.AutoResizeTextView
+                        android:id="@+id/userTextView"
+                        style="@style/WidthWrapHeightWrap"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@{viewModel.userFullName}"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_l"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/usernameTextView"
+                        style="@style/WidthWrapHeightWrap"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_l"
+                        android:text="@{viewModel.userName}"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    app:set_list="@{viewModel.navigationList}"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    style="@style/WidthMatchHeightWrap"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logoutButton"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="30dp"
+                    style="@style/DefaultButtonStyle"
+                    android:textAllCaps="true"
+                    android:text="@string/logout"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

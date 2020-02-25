@@ -1,0 +1,1 @@
+/Users/maxx/AndroidStudioProjects/nordv-st-android/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/maxx/AndroidStudioProjects/nordv-st-android/buildSrc/build/classes/kotlin/main/Versions.class

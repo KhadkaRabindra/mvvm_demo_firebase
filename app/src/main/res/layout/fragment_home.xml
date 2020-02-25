@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.home.HomeFragmentViewModel"/>
+    </data>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/upperLayout"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="18sp"
+                          android:layout_marginTop="5dp"
+                          android:textColor="@color/white"
+                          android:layout_height="wrap_content"
+                          android:text="Mitt kaffekort"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginEnd="80dp"
+                        app:set_list="@{viewModel.homeDataList}"
+                        android:orientation="vertical"
+                        style="@style/WidthMatchHeightWrap"
+                        android:layout_marginBottom="50dp"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                    android:layout_below="@id/upperLayout"
+                    android:layout_width="match_parent"
+                    android:id="@+id/relativeLayout"
+                    android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dataRecyclerView"
+                        app:set_list="@{viewModel.qrDataList}"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        style="@style/WidthMatchHeightWrap"/>
+
+                <ImageView android:layout_width="80dp"
+                           android:id="@+id/scanIconImageView"
+                           android:layout_marginTop="100dp"
+                           android:layout_height="80dp"
+                           android:background="@drawable/scan_icon"
+                           android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:layout_above="@id/relativeLayout"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginBottom="-20dp"
+                      android:adjustViewBounds="true"
+                      android:background="@drawable/rectangle_bg"
+                      android:layout_gravity="center"
+                      android:textColor="@color/text_color_blue"
+                      android:layout_height="wrap_content"
+                      android:text="STEMPEL"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

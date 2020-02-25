@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.maxx.nordvaest.ui.login.LoginActivityViewModel"/>
+    </data>
+
+    <LinearLayout style="@style/WidthMatchHeightMatchVertical"
+                  android:background="@color/default_white_background">
+
+        <ScrollView style="@style/WidthMatchHeightMatch"
+                    android:fillViewport="true">
+            <LinearLayout style="@style/WidthMatchHeightMatchVertical">
+
+                <LinearLayout
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"
+                        style="@style/WidthMatchHeightWrapVertical">
+
+                    <ImageView
+                            android:layout_marginTop="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/nordvaest_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                            android:paddingStart="30dp"
+                            android:paddingEnd="30dp"
+                            android:layout_marginTop="50dp"
+                            style="@style/WidthMatchHeightWrapVertical">
+
+                        <!--User name-->
+                        <com.google.android.material.textfield.TextInputLayout
+                                style="@style/BorderedTextInputLayoutStyle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/BorderEditTextStyle"
+                                    android:imeOptions="actionNext"
+                                    app:validateEmpty="@{true}"
+                                    android:hint="@string/email"
+                                    android:text="@={viewModel.email}"
+                                    app:validateEmptyMessage="@{@string/email_is_required}"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--Password-->
+                        <com.google.android.material.textfield.TextInputLayout
+                                style="@style/BorderedTextInputLayoutStyle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/passwordEditText"
+                                    style="@style/BorderEditTextStyle"
+                                    android:imeOptions="actionDone"
+                                    app:validateEmpty="@{true}"
+                                    android:hint="@string/password"
+                                    android:text="@={viewModel.password}"
+                                    android:inputType="textPassword"
+                                    app:validateEmptyMessage="@{@string/password_is_required}"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <!--Buttons-->
+                    <com.google.android.material.button.MaterialButton
+                            android:id="@+id/loginButton"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginTop="50dp"
+                            style="@style/DefaultButtonStyle"
+                            android:textAllCaps="false"
+                            android:text="@string/login"/>
+
+                    <!--Terms-->
+                    <LinearLayout
+                            android:id="@+id/accountLayout"
+                            android:layout_margin="@dimen/activity_vertical_margin"
+                            android:gravity="center"
+                            style="@style/WidthMatchHeightWrapVertical">
+
+                        <!--Forgot password-->
+                        <TextView android:id="@+id/forgotPasswordTextView"
+                                  style="@style/WidthWrapHeightWrap"
+                                  android:textColor="#827F7F"
+                                  android:layout_marginTop="5dp"
+                                  android:padding="5dp"
+                                  android:textStyle="bold"
+                                  android:text="mangler du bruker?"
+                                  android:textSize="14sp"/>
+
+                        <TextView style="@style/WidthWrapHeightWrap"
+                                  android:textSize="12sp"
+                                  android:layout_marginBottom="50dp"
+                                  android:layout_marginTop="10dp"
+                                  android:text="trykk her"
+                                  android:textColor="@color/colorAccent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

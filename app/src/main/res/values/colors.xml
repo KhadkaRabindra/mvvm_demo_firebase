@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263c6d</color>
+    <color name="colorPrimaryDark">#263c6d</color>
+    <color name="colorAccent">#eac6ba</color>
+
+    <!--<color name="colorPrimary">#E20000</color>
+    <color name="colorPrimaryDark">#880707</color>
+    <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorPrimaryPressed">#921B1E</color>
+    <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+    <color name="white">#ffffff</color>
+    <color name="default_white_background">#FAFBFD</color>
+    <color name="gray">#e0e0e0</color>
+    <!--pin view -->
+    <color name="colorGrey">#8290A1</color>
+    <color name="darkGrey">#4a636f</color>
+    <color name="successColor">@color/colorPrimary</color>
+    <color name="pinviewBackground">#FAFAFA</color>
+    <color name="pinIndicatorColor">@color/colorPrimaryPressed</color>
+    <color name="warningColor">#cc482d</color>
+    <color name="hintColor">#42000000</color>
+
+    <color name="grey_50">#f9fafa</color>
+    <color name="grey_100">#f4f5f5</color>
+    <color name="grey_200">#eeeeee</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbcbc</color>
+    <color name="grey_500">#9d9d9d</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#202020</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="registration_message_text">#505050</color>
+
+    <color name="dark_blue">#112338</color>
+    <color name="grey_light">#E3E3E3</color>
+    <color name="divider_color">#DDDDDD</color>
+    <color name="grey_border">#EAEAEA</color>
+    <color name="green">#3CBA54</color>
+    <color name="grey_text_color">#8D8888</color>
+
+    <!--Check balance-->
+    <color name="check_balance_dark">#971a1e</color>
+    <color name="check_balance_start_color">#961b1e</color>
+    <color name="check_balance_center_color">#be1c2b</color>
+    <color name="check_balance_end_color">#c71c2c</color>
+    <color name="balance_text_color">#e1e8ee</color>
+    <color name="total_balance_amount_color">#1fb6ff</color>
+    <color name="available_balance_amount_color">#11ce67</color>
+    <color name="check_balance_color_opened">#e8ebf1</color>
+    <color name="balance_color">#364c6a</color>
+    <color name="balance_color_light">#62738b</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="secondaryTextColor">#3CBA54</color>
+
+    <color name="white_transparent">#33FFFFFF</color>
+    <color name="text_color_blue">#121b2f</color>
+    <color name="gray_text_color">#808080</color>
+    <color name="icon_gray_color">#757575</color>
+
+    <color name="dark_gray">#9baab2</color>
+    <color name="full_transparent">#00000000</color>
+
+    <color name="colorProfile">#142f55</color>
+
+
+</resources>

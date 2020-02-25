@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Nordvaest</string>
+    <string name="please_wait">venligst vent</string>
+    <string name="position" translatable="false">position</string>
+
+    <!--Fonts-->
+    <string name="gotham">fonts/gotham-rounded-book.otf</string>
+    <string name="gothamBold">fonts/gotham-rounded-medium.otf</string>
+    <string name="gothamExtraBold">fonts/gotham-rounded-bold.otf</string>
+    <string name="gothamItalic">fonts/gotham-rounded-book-italic.otf</string>
+    <string name="gothamBoldItalic">fonts/gotham-rounded-bold-italic.otf</string>
+
+    <string name="error_message_password">Password must be minimum of 8 characters in length.</string>
+    <string name="error_message_email">Please enter a valid email address.</string>
+    <string name="error_message_mobile_number">Phone number must be of 8 or 9 digit.</string>
+    <string name="error_message_card_number">Please enter a valid card number.</string>
+    <string name="error_message_min_length">Invalid field. The minimum number of characters %1$d</string>
+    <string name="error_message_max_length">Invalid field. The maximum number of characters %1$d</string>
+    <string name="error_message_date_validation">Invalid data format</string>
+    <string name="error_message_regex_validation">Invalid format</string>
+    <string name="error_message_email_validation">Invalid email format</string>
+    <string name="error_message_username_validation">Invalid username format</string>
+    <string name="error_message_cpf_validation">Invalid CPF format</string>
+    <string name="error_message_url_validation">Invalid url format</string>
+    <string name="error_message_credit_card_validation">Invalid credit card format</string>
+    <string name="error_message_empty_validation">This field is required</string>
+    <string name="error_message_not_equal_password">Password not matched</string>
+    <string name="error_message_invalid_bonus_link">Invalid Bonus Link Card number</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="image_directory_name">DWAD</string>
+
+    <string name="logout">Logout</string>
+    <string name="home">Hjem</string>
+    <string name="name">Name</string>
+    <string name="login">Logg inn</string>
+    <string name="register">Registrer</string>
+    <string name="terms_and_conitions">Terms And Conditions</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">passord</string>
+    <string name="email">e-post</string>
+    <string name="email_is_required">Email is required.</string>
+    <string name="password_is_required">Password is required.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="name_is_required">Name is required.</string>
+    <string name="confirm_password">gjenta passord</string>
+    <string name="registration">Registration</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="new_password">New password</string>
+    <string name="new_password_is_required">New password is required.</string>
+    <string name="confirm_password_is_required">Confirm password is required.</string>
+    <string name="skann">Skann</string>
+    <string name="ok">Ok</string>
+    <string name="instillinger">Instillinger</string>
+    <string name="settings_komomunikasjon">Komomunikasjon</string>
+    <string name="notifikasjoner">Notifikasjoner</string>
+    <string name="rapportere_feil">Rapportere feil</string>
+    <string name="kontoinstillinger">Kontoinstillinger</string>
+    <string name="logg_ut">Logg ut</string>
+    <string name="applikasjon">Applikasjon</string>
+    <string name="smart_setmepel_version">Smart Stempel Versjon 1.0</string>
+    <string name="utviklet_av_smart_digital_as">Utviklet av Smart Digital AS</string>
+    <string name="profile">Profil</string>
+    <string name="registrete_stempler">Registrete Stempler</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="stempler_igjen_til_neste">Stempler igjen til neste:</string>
+    <string name="lojalitetsstatus">Lojalitetsstatus:</string>
+    <string name="neste_rengering">Neste Rengering:</string>
+
+    <string name="double_press_exit_string">Please click BACK again to exit.</string>
+</resources>

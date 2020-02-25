@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "830833133507",
+    "firebase_url": "https://norvadest.firebaseio.com",
+    "project_id": "norvadest",
+    "storage_bucket": "norvadest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830833133507:android:0ee12eee5f806672a6df76",
+        "android_client_info": {
+          "package_name": "com.maxx.nordvaest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830833133507-gq82l9feo5vr3tjoqplvr0khvs9o6dr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maxx.nordvaest",
+            "certificate_hash": "0c4d20abe79244103cb09f35deaa4b8bf15029dc"
+          }
+        },
+        {
+          "client_id": "830833133507-t4tl34kv0s8p0obk4dk5str1iet5qe4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh-KDBM9rzS-mKumaqb6bwjeZlx6bwLrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830833133507-t4tl34kv0s8p0obk4dk5str1iet5qe4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

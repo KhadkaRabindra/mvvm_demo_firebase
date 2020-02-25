@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewModel" type="com.maxx.nordvaest.core.ToolbarCommonActivityViewModel"/>
+    </data>
+
+
+    <LinearLayout
+            style="@style/WidthMatchHeightWrapVertical"
+            android:background="@color/default_white_background">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                style="@style/DefaultToolbarStyle"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.AppBarOverlay">
+            <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:gravity="center"
+                    style="@style/Toolbar.TitleText"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Registraiton"
+                    android:textColor="@color/white"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+                android:id="@+id/container"
+                style="@style/WidthMatchHeightMatch"
+                android:background="@color/default_white_background"/>
+
+    </LinearLayout>
+</layout>
